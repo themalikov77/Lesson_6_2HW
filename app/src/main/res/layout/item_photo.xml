@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="@dimen/one_hundred"
+        android:layout_height="@dimen/one_hundred"
+        android:layout_margin="@dimen/margin_16"
+        app:cardCornerRadius="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:clipToOutline="true"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="@id/card_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="@dimen/one_hundred"
+            android:layout_height="@dimen/one_hundred"
+            android:background="@color/white."
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/card_view"
+            app:layout_constraintTop_toTopOf="@id/card_view"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
